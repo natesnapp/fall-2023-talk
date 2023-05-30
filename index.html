@@ -21,7 +21,9 @@
 
 class: center, middle
 
-# Abstract presentation text
+# Abstract
+
+Optimizing model training and serving for large-scale models with billions of parameters poses significant challenges in terms of resource limitations, long training times, and efficient model serving. This presentation explores how Ray and Alpa can address these challenges and simplify the process of working with large models.
 
 ???
 
@@ -31,33 +33,83 @@ Notes for the _first_ slide
 
 Topics
 
-1. Ray overview
-2. Alpa overview
-3. Challenges of large model training
-4. How to partition large models
-5. Using Ray and Alpa to simplify training
-6. Challenges of large model serving
-7. Ray and Alpa optimizations for model serving
-8. Some shortcomings
+1. Ray Overview
+2. Alpa Overview
+3. Challenges of Large Model Training
+4. How to Partition Large Models
+5. Using Ray and Alpa to Simplify Training
+6. Challenges of Large Model Serving
+7. Ray and Alpa Optimizations for Model Serving
+8. Some Shortcomings
 
 ---
 
-# Ray overview
+# Ray Overview
 
-      Test image
-![](https://cdn.shopify.com/s/files/1/0051/4802/products/mona-1_large.jpg?v=1511308586)
-
----
-
-# Alpa overview
+* Open-source framework for building distributed applications
+* Provides tools and libraries for scalable and efficient computing
+* Enables distributed model training and serving
 
 ---
 
-# Challenges of large model training
+# Alpa Overview
+
+* AI platform by Alpa, designed for large-scale machine learning
+* Built on top of Ray for scalable and efficient training and serving
+* Provides high-level abstractions for distributed model development
 
 ---
 
-# How to partition large models
+# Challenges of Large Model Training
+
+* How to partition a computational graph
+* How to handle heterogeneous network topology
+* Long training times due to the sheer scale of data and computations
+
+---
+
+# How to Partition Large Models
+
+* Splitting large language models (LLMs) into smaller segments
+* Each segment processes a subset of the model's parameters (MoE, etc)
+* Mapping distributed training across multiple 
+
+---
+
+# Simplifying Training with Ray and Alpa
+
+* Ray provides distributed computing capabilities for efficient training
+* Alpa offers high-level abstractions for distributed model development
+* Simplifies the process of scaling training to large models
+
+---
+
+# Challenges of Large Model Serving
+
+* Serving large models requires handling high computational demands
+* Memory constraints when loading and running models
+* Efficient and low-latency predictions for real-time applications
+
+---
+
+# Enabling Efficient Model Serving with Ray and Alpa
+
+* Ray enables distributed model serving for efficient inference
+* Alpa provides tools for deploying and managing large models in production
+* Allows scaling model serving horizontally for high throughput
+
+---
+
+# Alpa on Ray benchmark results
+
+* coming soon
+
+---
+
+# Shortcomings of Ray and Alpa for Large Model Training/Serving
+
+* Workflows and specific instances where partitioning and scaling are not optimal
+* Cases where annotation is not straight forward
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
